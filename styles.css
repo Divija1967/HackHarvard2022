@@ -1,0 +1,115 @@
+/* colour palette and set base*/
+:root{
+    --neutral-clr: #35a4e5;
+    --text-clr: #060606;
+    --dark-clr: #00395b;
+    --light-clr: white;
+    --highlight-clr: #ffa323;
+    --number-clr: #9cebff;
+    /* background-color: var(--dark-clr); */
+    color: var(--text-clr);
+}
+
+*,
+*::before,
+*::after{
+    font-family: inherit;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-clr);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.search-engine{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--dark-clr);
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 20px -20px;
+}
+
+.input-bar, .input-bar-lock{
+    display: inline-block;
+    margin: 50px 50px 50px 50px;
+    position: relative;
+    padding: 10px 10px 5px 5px;
+    outline: none;
+    border: 1px solid var(--light-clr);
+    border-radius: 25px 25px 25px 25px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    min-width: 200px;
+    min-height: 80px;
+    font-size: medium;
+}
+
+h2{
+    margin: 50px;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-size: 90px;
+    color: white;
+}
+
+/* grid display */
+li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* change image properties */
+img {
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* visually change each item */
+.results{
+    margin: 2%;
+    opacity: 1;
+    border: 5px solid var(--dark-clr);
+    border-radius: 25px;
+    padding: 10px;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 400px;
+    min-height: 350px;
+}
+
+.results:hover{
+    border: 5px solid var(--highlight-clr);
+}
+
+button{
+    padding: 50px;
+    border-radius: 50px;
+    border: none;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    font-size: larger;
+    background-color: var(--highlight-clr);
+}
+
+button:hover{
+    border: #060606;
+    cursor: pointer;
+}
+
+span{
+    margin: 50px;
+}
+

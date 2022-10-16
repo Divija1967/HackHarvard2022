@@ -6,45 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RecipeReader</title>
     <meta name="author" content="Divija Bhargava and Anusha Sheikh">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body></body>
-<div class="search-engine">
+<body>
+<div class="search-engine" id="results-page">
     <form>
         <input 
             type="number" 
-            placeholder="Please enter your budget"
+            placeholder="$25"
             min="0"
             aria-valuemin="0"
             aria-valuetext="Please enter your budget"
-            class="input-bar"
+            class="input-bar-lock"
             id="input-budget"
             title="Please enter your grocery list budget for the week">
         <input 
             type="number" 
-            placeholder="Number of meals"
+            placeholder="4"
             min="0"
-            class="input-bar"
+            class="input-bar-lock"
             title="Enter the number of meals for the week">
         <input 
             type="text" 
-            placeholder="Key ingredient"
-            class="input-bar"
+            placeholder="Rhubarb"
+            class="input-bar-lock"
             title="Enter the key ingredient for the recipe bundle">
         <input 
             type="number" 
-            placeholder="Max amount of minutes to make one meal"
+            placeholder="60 minutes"
             min="0"
-            class="input-bar"
+            class="input-bar-lock"
             title="Enter the maximum number of hours you can spend on one meal">
     </form>
 </div>
 
-<h2>Welcome to RecipeReader!</h2>
 
-<a  href="results.html"><button id="search-btn">Enter</button></a>
+<div>
+    <span>1 result found for:</span>
+    <span>25$ budget for 4 meals using rhubarb. Maximum kitchen time is 60 minutes per meal</span>
+</div>
 
-<script src="script.js"></script>
+<div class="results">
+    <ul>
+        <a  href="rhubarb-recipes.html"><li class="ind-result"><img src="rhubarb.jpg" alt="rhubarb"><p>This result contains 4 recipes that will last 7 meals. Ingredients will cost around 20$ and the meals will take a minimum of 50 minutes per recipe.</p></li></a>
+    </ul>
+</div>
+
+<!-- <div class="timer">
+    <h1 id="timer">00:00</h1>
+    <input 
+            type="number" 
+            placeholder="Timer amount"
+            min="0"
+            class="input-time">
+</div> -->
+
+    <script src="script.js"></script>
 </body>
 </html>
